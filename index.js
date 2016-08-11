@@ -14,6 +14,7 @@ const app_managers = [];
 const server = express();
 
 for (let dir of fs.readdirSync(projectsURL)) {
+    dir = path.join(projectsURL, dir);
     let dirStat = fs.statSync(dir);
 
     if (dirStat.isDirectory()) {
