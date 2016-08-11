@@ -1,3 +1,4 @@
+"use strict";
 const vhost = require("vhost");
 
 class AppManager {
