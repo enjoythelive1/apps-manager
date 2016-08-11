@@ -12,7 +12,7 @@ class AppManager {
         this.app = require(this.directory);
     }
 
-    registger() {
+    register() {
         this.createHandler();
         this.enable();
         this.express_server.use((req, res, next) => {
