@@ -29,7 +29,7 @@ class AppManager {
     }
 
     createHandler() {
-        this.handler = vhost(this.domain, this.app.app);
+        this.handler = vhost(this.app.domain, this.app.app);
     }
 }
 
