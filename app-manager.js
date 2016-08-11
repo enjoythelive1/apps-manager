@@ -9,7 +9,8 @@ class AppManager {
     }
 
     loadApp(directory) {
-        this.app = require(this.directory);
+        let App = require(this.directory).App;
+        this.app = new App({port: process.env.APP_MANAGER_PORT || 8080});
     }
 
     register() {
